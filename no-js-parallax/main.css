@@ -1,0 +1,32 @@
+.parallax-container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.background-layer {
+  transform: translateZ(-1px) scale(2);
+  background-color: rgba(0,0,255,0.5);
+  text-align: center;
+}
+
+.foreground-layer {
+  transform: translateZ(0);
+  background-color: rgba(0,255,0,0.5);
+}
+
+.parallax-all {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  background-color: rgba(255, 0, 0, 0.5);
+}
